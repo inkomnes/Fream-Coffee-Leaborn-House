@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fream Coffee - Leaborn House</title>
+    
+    <!-- Impor Google Fonts (Hanya mengambil font, tidak mengambil library CSS lain) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/home.css">
+    
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header id="navbar" class="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <a href="#home" class="nav-logo">
+                Fream Coffee
+            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#jenis-kopi">Jenis Kopi</a>
+                <a href="#resep-minuman">Resep Minuman</a>
+                <a href="#resep-makanan">Resep Makanan</a>
+                <a href="#komentar">Ulasan</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="#home">Home</a>
+            <a href="#jenis-kopi">Jenis Kopi</a>
+            <a href="#resep-minuman">Resep Minuman</a>
+            <a href="#resep-makanan">Resep Makanan</a>
+            <a href="#komentar">Ulasan</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Fream Coffee</h1>
+                <p class="hero-subtitle">- Leaborn House -</p>
+                <div style="margin-top: 2rem;">
+                    <a href="#jenis-kopi" class="btn-cta">
+                        Jelajahi Kopi Kami
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- BAGIAN JENIS KOPI -->
+        <section id="jenis-kopi" class="section bg-cream">
+            <div class="container">
+                <h2 class="section-title">Jenis Kopi Populer</h2>
+                
+                <div class="grid grid-4-cols">
+                    <!-- Card 1: Arabica -->
+                    <div class="card">
+                        <a href="jenis-kopi/Arabica.html">
+                            <img src="assets/Gambar/arabica.png" 
+                                 onerror="this.onerror=null; this.src='https://placehold.co/600x400/c0a080/3C2F2F?text=Arabica+Coffee';"
+                                 alt="Biji kopi Arabica" class="card-img">
+                            <div class="card-body">
+                                <h3 class="card-title">Arabica</h3>
+                                <p class="card-text">Dikenal dengan rasanya yang sedikit asam, ringan, dan memiliki aroma yang kuat. Kopi ini menguasai sebagian besar pasar kopi dunia.</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Card 2: Robusta -->
+                    <div class="card">
+                        <a href="jenis-kopi/Robusta.html">
+                            <img src="assets/Gambar/Robusta.png" 
+                                 onerror="this.onerror=null; this.src='https://placehold.co/600x400/c0a080/3C2F2F?text=Robusta+Coffee';"
+                                 alt="Biji kopi Robusta" class="card-img">
+                            <div class="card-body">
+                                <h3 class="card-title">Robusta</h3>
+                                <p class="card-text">Memiliki rasa yang lebih kuat, pahit, dan kandungan kafein yang lebih tinggi. Sering digunakan untuk espresso dan kopi instan.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Card 3: Liberica -->
+                    <div class="card">
+                        <a href="jenis-kopi/Liberica.html">
+                            <img src="assets/Gambar/liberica.png" 
+                                 onerror="this.onerror=null; this.src='https://placehold.co/600x400/c0a080/3C2F2F?text=Liberica+Coffee';"
+                                 alt="Biji kopi Liberica" class="card-img">
+                            <div class="card-body">
+                                <h3 class="card-title">Liberica</h3>
+                                <p class="card-text">Kopi dengan aroma unik yang sering dideskripsikan seperti buah atau bunga, dengan rasa yang sedikit 'smoky'.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Card 4: Excelsa -->
+                    <div class="card">
+                        <a href="jenis-kopi/excelsa.html">
+                            <img src="assets/Gambar/excle.png" 
+                                 onerror="this.onerror=null; this.src='https://placehold.co/600x400/c0a080/3C2F2F?text=Excelsa+Coffee';"
+                                 alt="Biji kopi Excelsa" class="card-img">
+                            <div class="card-body">
+                                <h3 class="card-title">Excelsa</h3>
+                                <p class="card-text">Memiliki rasa yang kompleks, seringkali fruity dan tart, memberikan dimensi rasa yang berbeda dari kopi lainnya.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BAGIAN RESEP MINUMAN -->
+        <section id="resep-minuman" class="section bg-white">
+            <div class="container">
+                <h2 class="section-title">Resep Minuman Kopi</h2>
+                
+                <div class="grid grid-3-cols">
+                    <!-- Card 1: Cappuccino -->
+                    <div class="card card-border-bottom">
+                         <a href="Resep-minuman/Cappucino.html">
+                        <img src="assets/Gambar/Cappucino.png" alt="Cappuccino" class="card-img">
+                        <div class="card-body">
+                            <h3 class="card-title">Classic Cappuccino</h3>
+                            <p class="card-text">Perpaduan seimbang antara espresso, susu panas, dan busa susu yang tebal di atasnya. Sempurna untuk memulai hari.</p>
+                        </div>
+                    </a>
+                    </div>
+
+                    <!-- Card 2: Kopi Susu -->
+                    <div class="card card-border-bottom">
+                        <a href="Resep-minuman/KOPISUSU.html">
+                        <img src="assets/Gambar/KopiSUSU.png" alt="Kopi Susu" class="card-img">
+                        <div class="card-body">
+                            <h3 class="card-title">Kopi Susu Gula Aren</h3>
+                            <p class="card-text">Minuman kekinian yang memadukan espresso, susu segar, dan manisnya gula aren cair yang legit.</p>
+                        </div>
+                    </a>
+                    </div>
+
+                    <!-- Card 3: Affogato -->
+                    <div class="card card-border-bottom">
+                        <a href="Resep-minuman/Affogato.html">
+                        <img src="assets/Gambar/Affogato.png" alt="Affogato" class="card-img">
+                        <div class="card-body">
+                            <h3 class="card-title">Affogato</h3>
+                            <p class="card-text">Resep sederhana namun mewah. Satu sendok es krim vanila berkualitas yang 'ditenggelamkan' dengan satu shot espresso panas.</p>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+            </div>
+
+            
+        </section>
+
+        <!-- BAGIAN RESEP MAKANAN -->
+        <section id="resep-makanan" class="section bg-cream">
+            <div class="container">
+                <h2 class="section-title">Kreasi Makanan Berbasis Kopi</h2>
+                
+                <div class="grid grid-3-cols">
+                    <!-- Card 1: Tiramisu -->
+                    <div class="card card-border-right">
+                        <a href="Resep-makanan/Tiramisu.html">
+                        <img src="assets/Gambar/Tiramisu.png" alt="Tiramisu" class="card-img">
+                        <div class="card-body">
+                            <h3 class="card-title">Tiramisu</h3>
+                            <p class="card-text">Dessert klasik Italia yang menggunakan biskuit ladyfingers dicelup ke dalam kopi, dilapisi dengan krim keju mascarpone yang kaya.</p>
+                        </div>
+                    </a>
+                    </div>
+
+                    <!-- Card 2: Steak -->
+                    <div class="card card-border-right">
+                        <a href="Resep-makanan/Cafe.html">
+                            <img src="assets/Gambar/Cafe.png" alt="Steak Kopi" class="card-img">
+                        <div class="card-body">
+                            <h3 class="card-title">Café Liégeois</h3>
+                            <p class="card-text">dessert dingin asal Prancis yang terdiri dari es krim kopi dan vanila, disajikan dengan saus cokelat dan whipped cream, dengan cita rasa manis dan aroma kopi yang kuat.</p>
+                        </div></a>
+                        
+                    </div>
+
+                    <!-- Card 3: Brownies -->
+                    <div class="card card-border-right">
+                        <a href="Resep-makanan/Semi.html">
+                        <img src="assets/Gambar/Semi.png" alt="Brownies Kopi" class="card-img">
+                        <div class="card-body">
+                            <h3 class="card-title">Semifreddo al Caffè</h3>
+                            <p class="card-text">dessert khas Italia berbasis kopi dengan tekstur setengah beku yang lembut dan creamy, terbuat dari campuran espresso dan krim, memberikan rasa kopi yang halus dan tidak terlalu pahit.</p>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BAGIAN KOMENTAR -->
+        <section id="komentar" class="section bg-white">
+            <div class="container">
+                <h2 class="section-title">Ulasan Pengunjung</h2>
+                
+                <!-- Form Komentar -->
+                <div class="comment-form-container">
+                    <h3 style="text-align: center; margin-bottom: 1.5rem; color: var(--color-dark);">Tulis Pengalaman Anda</h3>
+                    <form id="formKomentar">
+                        <div class="form-group">
+                            <label for="inputNama" class="form-label">Nama</label>
+                            <input type="text" id="inputNama" class="form-input" placeholder="Masukkan nama Anda..." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPesan" class="form-label">Pesan</label>
+                            <textarea id="inputPesan" class="form-textarea" rows="4" placeholder="Apa yang Anda pikirkan tentang kopi kami?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-cta" style="width: 100%;">Kirim Komentar</button>
+                    </form>
+                </div>
+
+                <!-- Daftar Komentar -->
+                <div id="daftarKomentar" class="comment-list">
+                    <!-- Komentar statis sebagai contoh -->
+                    <div class="comment-item">
+                        <div class="comment-header">
+                            <span class="comment-author">Admin Fream</span>
+                            <span class="comment-date">05 Desember 2025 12:00</span>
+                        </div>
+                        <div class="comment-body">
+                            Selamat datang di Fream Coffee! Silakan tinggalkan kesan, pesan, atau pertanyaan Anda di kolom komentar ini.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2025 Fream Coffee - Leaborn House. Dibuat dengan <span class="heart">&hearts;</span>.</p>
+    </footer>
+
+    <!-- SCRIPT JAVASCRIPT -->
+    <script>
+        // Logika Navbar Scroll
+        let lastScrollTop = 0;
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > lastScrollTop && scrollTop > navbar.offsetHeight) {
+                // Scroll ke bawah: sembunyikan navbar
+                navbar.style.top = `-${navbar.offsetHeight + 10}px`;
+            } else {
+                // Scroll ke atas: tampilkan navbar
+                navbar.style.top = "0";
+            }
+            
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+
+        // Logika Mobile Menu
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+
+        mobileMenuBtn.addEventListener('click', function() {
+            // Toggle tampilan menu (block/none)
+            if (mobileMenu.style.display === 'block') {
+                mobileMenu.style.display = 'none';
+            } else {
+                mobileMenu.style.display = 'block';
+            }
+        });
+
+        // Tutup menu saat link diklik
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', function() {
+                mobileMenu.style.display = 'none';
+            });
+        }
+
+        /* * LOGIKA KOMENTAR
+         * Menangani submit form, mengambil tanggal/waktu, dan menampilkan komentar baru
+         */
+        const formKomentar = document.getElementById('formKomentar');
+        const daftarKomentar = document.getElementById('daftarKomentar');
+
+        formKomentar.addEventListener('submit', function(event) {
+            // 1. Mencegah form reload halaman
+            event.preventDefault();
+
+            // 2. Mengambil nilai dari input
+            const namaInput = document.getElementById('inputNama');
+            const pesanInput = document.getElementById('inputPesan');
+            const nama = namaInput.value;
+            const pesan = pesanInput.value;
+
+            if (nama.trim() === '' || pesan.trim() === '') {
+                alert('Silakan isi nama dan pesan Anda.');
+                return;
+            }
+
+            // 3. Membuat Objek Tanggal dan Memformatnya
+            const now = new Date();
+            
+            // Nama-nama bulan dalam bahasa Indonesia
+            const namaBulan = [
+                "Januari", "Februari", "Maret", "April", "Mei", "Juni",
+                "Juli", "Agustus", "September", "Oktober", "November", "Desember"
+            ];
+
+            const tanggal = now.getDate().toString().padStart(2, '0'); // Tambah 0 jika < 10 (misal: 05)
+            const bulan = namaBulan[now.getMonth()]; // Ambil nama bulan dari array
+            const tahun = now.getFullYear();
+            const jam = now.getHours().toString().padStart(2, '0');
+            const menit = now.getMinutes().toString().padStart(2, '0');
+
+            // Format akhir: "05 Desember 2025 14:30"
+            const waktuLengkap = `${tanggal} ${bulan} ${tahun} ${jam}:${menit}`;
+
+            // 4. Membuat Element HTML Komentar Baru
+            const komentarBaru = document.createElement('div');
+            komentarBaru.classList.add('comment-item');
+
+            // Gunakan escape untuk mencegah XSS sederhana (keamanan dasar)
+            const namaSafe = nama.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+            const pesanSafe = pesan.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+            komentarBaru.innerHTML = `
+                <div class="comment-header">
+                    <span class="comment-author">${namaSafe}</span>
+                    <span class="comment-date">${waktuLengkap}</span>
+                </div>
+                <div class="comment-body">
+                    ${pesanSafe}
+                </div>
+            `;
+
+            // 5. Menambahkan ke daftar (prepend = taruh di paling atas)
+            daftarKomentar.prepend(komentarBaru);
+
+            // 6. Reset Form
+            formKomentar.reset();
+        });
+    </script>
+</body>
+</html>

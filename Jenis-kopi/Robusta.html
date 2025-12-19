@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Judul halaman -->
+    <title>Fream Coffee - Detail Kopi Robusta</title>
+
+    <!-- Impor Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/Robusta.css">
+
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header id="navbar">
+        <nav class="container nav-container">
+            <!-- Logo/Judul Kiri (Link ke index.html#home) -->
+            <a href="../index.html#home" class="nav-logo">
+                Fream Coffee
+            </a>
+            
+            <!-- Link Navigasi (Desktop) (Link ke index.html#...) -->
+            <div class="nav-links">
+                <a href="../index.html#home" class="hover:text-coffee-light">Home</a>
+                <a href="../index.html#jenis-kopi" class="hover:text-coffee-light">Jenis Kopi</a>
+                <a href="../index.html#resep-minuman" class="hover:text-coffee-light">Resep Minuman</a>
+                <a href="../index.html#resep-makanan" class="hover:text-coffee-light">Resep Makanan</a>
+            </div>
+            
+            <!-- Tombol Menu Mobile -->
+            <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </nav>
+        
+        <!-- Menu Mobile (Link ke ../Home#...) -->
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="../index.html">Home</a>
+            <a href="../index.html#jenis-kopi">Jenis Kopi</a>
+            <a href="../index.html#resep-minuman">Resep Minuman</a>
+            <a href="../index.html#resep-makanan">Resep Makanan</a>
+        </div>
+    </header>
+
+    <!-- Konten Utama -->
+    <main>
+
+        <!-- BAGIAN HERO ROBUSTA -->
+        <!-- HERO ARABICA -->
+    <section id="hero-Robusta" class="hero">
+
+    <!-- VIDEO BACKGROUND -->
+    <video class="hero-video" autoplay muted loop playsinline>
+        <source src="../assets/Video/Robusta.mp4" type="video/mp4">
+        Browser kamu tidak mendukung video.
+    </video>
+
+    <!-- Overlay -->
+    <div class="hero-overlay"></div>
+
+    <!-- Konten Teks -->
+    <div class="hero-content">
+        <h1 class="hero-title font-cursive">Robusta</h1>
+        <p class="hero-subtitle">Kekuatan Rasa Yang Penuh</p>
+    </div>
+
+</section>
+        
+        <!-- BAGIAN DETAIL KONTEN ROBUSTA -->
+        <section id="detail-robusta" class="section">
+            <div class="container">
+                <!-- Layout Grid 2 kolom -->
+                <div class="detail-grid">
+                    
+                    <!-- Kolom Konten Utama (2/3) -->
+                    <div class="content-main">
+                        <h2 class="main-title">Si Tangguh Pembangkit Semangat: Kopi Robusta</h2>
+                        
+                        <p class="content-paragraph">
+                            Kopi Robusta (Spesies: *Coffea canephora*) adalah jenis kopi kedua yang paling banyak diproduksi di dunia setelah Arabica. Seperti namanya, Robusta adalah tanaman yang lebih "tangguh" (robust), lebih tahan terhadap hama penyakit dan dapat tumbuh di dataran rendah dengan cuaca yang lebih panas.
+                        </p>
+                        
+                        <h3 class="content-subtitle">Asal Usul dan Popularitas</h3>
+                        <p class="content-paragraph">
+                            Robusta berasal dari Afrika Sub-Sahara, khususnya di daerah Kongo. Kopi ini baru ditemukan sekitar 100 tahun setelah Arabica. Popularitasnya meningkat karena ketahanannya dan hasil panen yang lebih tinggi. Robusta menjadi tulang punggung bagi banyak produk kopi instan dan campuran espresso untuk menambahkan *crema* (busa tebal) dan "tendangan" kafein.
+                        </p>
+
+                        <h3 class="content-subtitle">Karakteristik Rasa (Flavor Profile)</h3>
+                        <p class="content-paragraph">
+                            Robusta memiliki profil rasa yang sangat berbeda dari Arabica. Kandungan kafeinnya jauh lebih tinggi (sekitar 1.7-4.0%), sementara kandungan gulanya lebih rendah. Hal ini menghasilkan rasa yang lebih kuat, pahit, dan seringkali digambarkan memiliki nuansa *earthy* atau seperti karet.
+                        </p>
+                        <ul class="content-list">
+                            <li><strong class="list-highlight">Rasa:</strong> Kuat, pahit, seringkali *earthy* atau *grainy* (seperti gandum).</li>
+                            <li><strong class="list-highlight">Aroma:</strong> Cenderung netral atau sedikit beraroma kacang-kacangan.</li>
+                            <li><strong class="list-highlight">Body:</strong> Lebih kental dan berat (full body).</li>
+                            <li><strong class="list-highlight">Aftertaste:</strong> Pahit yang tertinggal cukup lama.</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Kolom Sidebar (1/3) -->
+                    <div>
+                        <div class="sidebar-card">
+                            <img src="../assets/Gambar/Robusta.png" 
+                                 onerror="this.onerror=null; this.src='https://placehold.co/600x400/6f4e37/f5f5dc?text=Biji+Robusta+Detail';"
+                                 alt="Gambar detail biji Robusta" class="sidebar-img">
+                            <div class="sidebar-body">
+                                <h4 class="sidebar-title">Fakta Singkat Robusta</h4>
+                                <ul class="sidebar-list">
+                                    <li>
+                                        <strong class="list-highlight">Bentuk Biji:</strong> Lebih bulat, cembung, dengan celah tengah yang lurus.
+                                    </li>
+                                    <li>
+                                        <strong class="list-highlight">Kafein:</strong> Tinggi (1.7% - 4.0%).
+                                    </li>
+                                    <li>
+                                        <strong class="list-highlight">Habitat:</strong> Tumbuh baik di dataran rendah (0 - 900 mdpl).
+                                    </li>
+                                    <li>
+                                        <strong class="list-highlight">Daerah Populer:</strong> Vietnam (penghasil terbesar), Brasil, Indonesia (Lampung, Temanggung).
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Tombol Kembali -->
+                <div style="text-align: center;">
+                    <a href="../index.html#jenis-kopi" class="back-link">
+                        Kembali ke Jenis Kopi
+                    </a>
+                </div>
+                
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2025 Fream Coffee - Leaborn House. Dibuat dengan cinta.</p>
+    </footer>
+
+    <!-- SCRIPT JAVASCRIPT -->
+    <script>
+        // --- Logika Navbar Menghilang Saat Scroll ---
+        
+        let lastScrollTop = 0; 
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > lastScrollTop && scrollTop > navbar.offsetHeight) {
+                // Scroll ke Bawah: Sembunyikan navbar
+                navbar.style.top = "-100px"; 
+            } else {
+                // Scroll ke Atas: Tampilkan navbar
+                navbar.style.top = "0";
+            }
+            
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; 
+        });
+
+        // --- Logika Menu Mobile ---
+        
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        // Toggle menu saat tombol di-klik
+        mobileMenuBtn.addEventListener('click', function() {
+            // Menggunakan classList.toggle untuk menyembunyikan/menampilkan
+            if (mobileMenu.style.display === 'block') {
+                mobileMenu.style.display = 'none';
+            } else {
+                mobileMenu.style.display = 'block';
+            }
+        });
+
+        // Sembunyikan menu setelah link di-klik (untuk navigasi anchor)
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', function() {
+                 mobileMenu.style.display = 'none';
+            });
+        }
+    </script>
+
+</body>
+</html>

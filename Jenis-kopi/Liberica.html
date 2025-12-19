@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Judul halaman -->
+    <title>Fream Coffee - Detail Kopi Robusta</title>
+
+    <!-- Impor Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/Liberica.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header id="navbar">
+        <nav class="container nav-container">
+            <!-- Logo/Judul Kiri (Link ke index.html#../Home) -->
+            <a href="../index.html#home" class="nav-logo">
+                Fream Coffee
+            </a>
+            
+            <!-- Link Navigasi (Desktop) (Link ke ../Home#...) -->
+            <div class="nav-links">
+                <a href="../index.html#home" class="hover:text-coffee-light">Home</a>
+                <a href="../index.html#jenis-kopi" class="hover:text-coffee-light">Jenis Kopi</a>
+                <a href="../index.html#resep-minuman" class="hover:text-coffee-light">Resep Minuman</a>
+                <a href="../index.html#resep-makanan" class="hover:text-coffee-light">Resep Makanan</a>
+            </div>
+            
+            <!-- Tombol Menu Mobile -->
+            <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </nav>
+        
+        <!-- Menu Mobile (Link ke ../Home#...) -->
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="../index.html">Home</a>
+            <a href="../index.html#jenis-kopi">Jenis Kopi</a>
+            <a href="../index.html#resep-minuman">Resep Minuman</a>
+            <a href="../index.html#resep-makanan">Resep Makanan</a>
+        </div>
+    </header>
+
+    <!-- Konten Utama -->
+   <!-- Konten Utama -->
+<main>
+
+    <!-- BAGIAN HERO LIBERICA -->
+     <section id="hero-Liberica" class="hero">
+
+    <!-- VIDEO BACKGROUND -->
+    <video class="hero-video" autoplay muted loop playsinline>
+        <source src="../assets/Video/Liberica.mp4" type="video/mp4">
+        Browser kamu tidak mendukung video.
+    </video>
+
+    <!-- Overlay -->
+    <div class="hero-overlay"></div>
+
+    <!-- Konten Teks -->
+    <div class="hero-content">
+        <h1 class="hero-title font-cursive">Liberia</h1>
+        <p class="hero-subtitle">Aroma Khas dengan Karakter yang unik</p>
+    </div>
+
+</section>
+    
+    <!-- BAGIAN DETAIL KONTEN LIBERICA -->
+    <section id="detail-liberica" class="section">
+        <div class="container">
+            <!-- Layout Grid 2 kolom -->
+            <div class="detail-grid">
+                
+                <!-- Kolom Konten Utama (2/3) -->
+                <div class="content-main">
+                    <h2 class="main-title">Keunikan Kopi Liberica: Si Eksotis Beraroma Khas</h2>
+                    
+                    <p class="content-paragraph">
+                        Kopi Liberica (Spesies: <em>Coffea liberica</em>) merupakan salah satu varietas kopi yang cukup langka dibandingkan Arabica dan Robusta. Liberica terkenal dengan bentuk bijinya yang besar dan lonjong, serta karakter rasa yang sangat khas—kadang dianggap “unik” atau “eksentrik” oleh para penikmat kopi.
+                    </p>
+
+                    <h3 class="content-subtitle">Asal Usul dan Persebaran</h3>
+                    <p class="content-paragraph">
+                        Liberica berasal dari Afrika Barat, khususnya Liberia. Kopi ini kemudian menyebar ke Asia, termasuk Malaysia, Filipina, dan sebagian wilayah Indonesia. Liberica sering ditanam di daerah rawa atau lahan yang tidak cocok bagi Arabica maupun Robusta, sehingga menjadi alternatif penting bagi petani kopi di wilayah tropis rendah.
+                    </p>
+
+                    <h3 class="content-subtitle">Karakteristik Rasa (Flavor Profile)</h3>
+                    <p class="content-paragraph">
+                        Liberica punya rasa dan aroma yang unik serta tidak mirip dengan Arabica atau Robusta. Ada sentuhan aroma smoky, woody, dan fruity yang “beda” untuk lidah pemula, tetapi justru dicari oleh pecinta karakter rasa yang eksotis.
+                    </p>
+                    <ul class="content-list">
+                        <li><strong class="list-highlight">Rasa:</strong> Woody, smoky, sedikit fruity, kadang ada rasa floral tetapi “funky”.</li>
+                        <li><strong class="list-highlight">Aroma:</strong> Tebal dengan nuansa kayu, tembakau, dan rempah.</li>
+                        <li><strong class="list-highlight">Body:</strong> Medium hingga berat.</li>
+                        <li><strong class="list-highlight">Aftertaste:</strong> Unik, kadang kompleks dan sedikit smoky.</li>
+                    </ul>
+                </div>
+                
+                <!-- Kolom Sidebar (1/3) -->
+                <div>
+                    <div class="sidebar-card">
+                        <img src="../assets/Gambar/liberica.png" 
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/4e3620/f5f5dc?text=Biji+Liberica+Detail';"
+                             alt="Gambar detail biji Liberica" class="sidebar-img">
+                        <div class="sidebar-body">
+                            <h4 class="sidebar-title">Fakta Singkat Liberica</h4>
+                            <ul class="sidebar-list">
+                                <li>
+                                    <strong class="list-highlight">Bentuk Biji:</strong> Besar, lonjong, celah biji melengkung.
+                                </li>
+                                <li>
+                                    <strong class="list-highlight">Kafein:</strong> Sedang (lebih rendah dari Robusta).
+                                </li>
+                                <li>
+                                    <strong class="list-highlight">Habitat:</strong> Cocok di dataran rendah & daerah rawa.
+                                </li>
+                                <li>
+                                    <strong class="list-highlight">Daerah Populer:</strong> Malaysia, Filipina, Indonesia (Liberica Kopi Kapal / Excelsa).
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+             <div style="text-align: center;">
+                    <a href="../index.html#jenis-kopi" class="back-link">
+                        Kembali ke Jenis Kopi
+                    </a>
+                </div>
+        </div>
+    </section>
+
+</main>
+
+                    
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2025 Fream Coffee - Leaborn House. Dibuat dengan cinta.</p>
+    </footer>
+
+    <!-- SCRIPT JAVASCRIPT -->
+    <script>
+        // --- Logika Navbar Menghilang Saat Scroll ---
+        
+        let lastScrollTop = 0; 
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > lastScrollTop && scrollTop > navbar.offsetHeight) {
+                // Scroll ke Bawah: Sembunyikan navbar
+                navbar.style.top = "-100px"; 
+            } else {
+                // Scroll ke Atas: Tampilkan navbar
+                navbar.style.top = "0";
+            }
+            
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; 
+        });
+
+        // --- Logika Menu Mobile ---
+        
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        // Toggle menu saat tombol di-klik
+        mobileMenuBtn.addEventListener('click', function() {
+            // Menggunakan classList.toggle untuk menyembunyikan/menampilkan
+            if (mobileMenu.style.display === 'block') {
+                mobileMenu.style.display = 'none';
+            } else {
+                mobileMenu.style.display = 'block';
+            }
+        });
+
+        // Sembunyikan menu setelah link di-klik (untuk navigasi anchor)
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', function() {
+                 mobileMenu.style.display = 'none';
+            });
+        }
+    </script>
+
+</body>
+</html>

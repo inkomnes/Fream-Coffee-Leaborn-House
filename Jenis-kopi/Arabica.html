@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fream Coffee - Detail Kopi Arabica</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Arabica -->
+    <link rel="stylesheet" href="../assets/arabica.css">
+</head>
+<body>
+
+<header id="navbar">
+    <nav class="container nav-container">
+        <a href="../index.html#home" class="nav-logo">Fream Coffee</a>
+        <div class="nav-links">
+            <a href="../index.html#home">Home</a>
+            <a href="../index.html#jenis-kopi">Jenis Kopi</a>
+            <a href="../index.html#resep-minuman">Resep Minuman</a>
+            <a href="../index.html#resep-makanan">Resep Makanan</a>
+        </div>
+        <button id="mobile-menu-btn" class="mobile-menu-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </button>
+    </nav>
+
+    <div id="mobile-menu" class="mobile-menu">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#jenis-kopi">Jenis Kopi</a>
+        <a href="../index.html#resep-minuman">Resep Minuman</a>
+        <a href="../index.html#resep-makanan">Resep Makanan</a>
+    </div>
+</header>
+
+<main>
+
+    <!-- HERO ARABICA -->
+    <section id="hero-arabica" class="hero">
+
+    <!-- VIDEO BACKGROUND -->
+    <video class="hero-video" autoplay muted loop playsinline>
+        <source src="../assets/Video/Arabica.mp4" type="video/mp4">
+        Browser kamu tidak mendukung video.
+    </video>
+
+    <!-- Overlay -->
+    <div class="hero-overlay"></div>
+
+    <!-- Konten Teks -->
+    <div class="hero-content">
+        <h1 class="hero-title font-cursive">Arabica</h1>
+        <p class="hero-subtitle">Kelembutan dengan Aroma Berkelas</p>
+    </div>
+
+</section>
+
+
+    <!-- DETAIL ARABICA -->
+    <section id="detail-arabica" class="section">
+        <div class="container">
+            <div class="detail-grid">
+
+                <div class="content-main">
+                    <h2 class="main-title">Si Elegan yang Mendominasi Dunia: Kopi Arabica</h2>
+
+                    <p class="content-paragraph">
+                        Kopi Arabica (Spesies: <em>Coffea arabica</em>) adalah jenis kopi yang paling populer di seluruh dunia. Dikenal dengan cita rasa yang halus, aromatik, dan kompleks, Arabica menjadi pilihan utama bagi banyak kedai kopi premium.
+                    </p>
+
+                    <h3 class="content-subtitle">Asal Usul dan Persebaran</h3>
+                    <p class="content-paragraph">
+                        Arabica berasal dari dataran tinggi Ethiopia dan kemudian menyebar ke Yaman sebelum akhirnya dikenal di seluruh dunia. Ia tumbuh paling baik di dataran tinggi dengan suhu sejuk.
+                    </p>
+
+                    <h3 class="content-subtitle">Karakteristik Rasa (Flavor Profile)</h3>
+                    <p class="content-paragraph">
+                        Arabica memiliki rasa yang lebih halus dan manis dibanding Robusta. Kandungan gulanya lebih tinggi, sementara kafeinnya lebih rendah.
+                    </p>
+                    <ul class="content-list">
+                        <li><strong class="list-highlight">Rasa:</strong> Fruity, floral, manis, lebih kompleks.</li>
+                        <li><strong class="list-highlight">Aroma:</strong> Wangi, floral, kadang ada sentuhan coklat atau buah.</li>
+                        <li><strong class="list-highlight">Body:</strong> Ringan hingga medium.</li>
+                        <li><strong class="list-highlight">Aftertaste:</strong> Bersih dan lembut.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <div class="sidebar-card">
+                        <img src="../assets/Gambar/Arabica.png" alt="Biji Arabica" class="sidebar-img">
+                        <div class="sidebar-body">
+                            <h4 class="sidebar-title">Fakta Singkat Arabica</h4>
+                            <ul class="sidebar-list">
+                                <li><strong class="list-highlight">Bentuk Biji:</strong> Lonjong dengan celah melengkung.</li>
+                                <li><strong class="list-highlight">Kafein:</strong> Rendah (0.8% - 1.5%).</li>
+                                <li><strong class="list-highlight">Habitat:</strong> Dataran tinggi (1000–2000 mdpl).</li>
+                                <li><strong class="list-highlight">Daerah Populer:</strong> Ethiopia, Yaman, Brazil, Aceh Gayo, Toraja.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div style="text-align:center;">
+                <a href="../index.html#jenis-kopi" class="back-link">Kembali ke Jenis Kopi</a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>&copy; 2025 Fream Coffee - Leaborn House. Dibuat dengan cinta.</p>
+</footer>
+
+<script>
+    let lastScrollTop = 0;
+    const navbar = document.getElementById('navbar');
+
+    window.addEventListener('scroll', function() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop && scrollTop > navbar.offsetHeight) {
+            navbar.style.top = "-100px";
+        } else {
+            navbar.style.top = "0";
+        }
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    });
+
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.style.display = mobileMenu.style.display === 'block' ? 'none' : 'block';
+    });
+
+    const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+    for (let link of mobileMenuLinks) {
+        link.addEventListener('click', () => mobileMenu.style.display = 'none');
+    }
+</script>
+
+</body>
+</html>
